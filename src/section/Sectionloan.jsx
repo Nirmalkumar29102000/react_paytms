@@ -11,8 +11,8 @@ import paytmfirst from "../assets/paytmfirst.png";
 import investstock from "../assets/investstock.png";
 import bajaj_finance from "../assets/bajaj finance.jpg";
 import tvs_credit from "../assets/tvs finance.jpg";
-import ujjivan_finance from "../assets/ujjivan finance.jpg";
-import muthoot_finance from "../assets/muthoot finance.jpg";
+import ujjivan_finance from "../assets/Ujjivan finance.jpg";
+import muthoot_finance from "../assets/Muthoot Finance.jpg";
 function Sectionloan() {
   return (
     <>
