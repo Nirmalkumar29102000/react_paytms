@@ -1,0 +1,939 @@
+*{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;  
+        }
+.body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+.upistatement{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upistatement > div{
+    width: 65%;
+    height: 80px;
+    background: #8fdcff;
+    border-radius: 15px;
+    display: flex;
+}
+.upistatement > div div:nth-child(1){
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000058;
+}
+.upistatement > div div:nth-child(2){
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upistatement > div div:nth-child(1) h1{
+    font-size: 23px;
+}
+.upistatement > div div:nth-child(1) p{
+    font-size: 18px;
+    padding-top: 5px;
+}
+.upistatement > div div:nth-child(2) div{
+    width: 250px;
+    height: 40px;
+    background: black;
+    font-size: 13px;
+    border-radius: 20px;
+    color: white;
+}
+.wholepage{
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.recharge-bill-payment{
+  width: 100%;
+  height: 250px;
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: space-between;
+}
+.recharge-bill-payment h3{
+  font-size: 20px;
+  margin: 20px 0px 0px 20px;
+}
+.recharge-bill-payment1{
+  width: 75%;
+  height: 100%;
+  background: white;
+  border-radius: 15px;
+  /* border: 2px solid; */
+
+}
+.recharge-bill-payment2{
+  width: 23%;
+  height: 100%;
+  border: 1px solid #8fdcff;
+  background:#8fdcff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s linear;
+}
+.recharge-bill-payment2:hover{
+  transform: scale(1.02,1.02);
+}
+.recharge-bill-payment1 > div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.recharge-bill-payment1 > div div{
+  width: 120px;
+  height: 150px;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+.recharge-bill-payment1 > div div img{
+  width: 60px;
+  height: 60px;
+}
+.recharge-bill-payment1 > div div:hover{
+  box-shadow: 2px 2px 20px rgb(201, 201, 201),-2px -2px 20px rgb(201, 201, 201);
+}
+.recharge-bill-payment2 > h2{
+  color: #000058;
+  margin: 15px 0px 0px 5px;
+
+}
+.recharge-bill-payment2 > p{
+  color: #000058;
+  margin: 0px 0px 0px 5px;
+}
+.recharge-bill-payment2 > p + div{
+  width: 115px;
+    height: 20px;
+    background: black;
+    font-size: 8px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+}
+.separate-div1{
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  width: 120px;
+  height: 170px;
+  border: 6px solid rgb(78, 77, 77);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: white;
+  border-bottom: none;
+}
+.separate-div1 > div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px 0px 8px;
+  font-size: 10px;
+}
+.separate-div1 > h6{
+  font-size: 14px;
+  margin: 10px 0px 0px 5px;
+}
+.separate-div2{
+  position: absolute;
+  right: 3px;
+  bottom: 30px;
+  width: 135px;
+  height: 70px;
+  background: white;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px black;
+}
+.separate-div2 div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px 0px 5px;
+  align-items: center;
+  font-size: 10px;
+  height: 23px;
+  
+}
+.separate-div2 div:nth-child(1){
+  background: rgb(252, 216, 150);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.cashback{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.cashback > div{
+  width: 49%;
+  height: 60px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.2s linear;
+}
+.cashback > div:hover{
+  transform: scale(1.03,1.03);
+}
+.cashback > div:nth-child(1){
+  background:#00aeff;
+}
+.cashback > div div:nth-child(1){
+  background: rgb(0, 2, 148);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  padding: 12px 0px 0px 10px;
+  font-size: 10px;
+  color: white;
+}
+.cashback > div:nth-child(2) div:nth-child(1){
+  background-image:url(../assets/router.png);
+  background-size: 100% 100%;
+}
+.cashback > div h2{
+  color: white;
+  font-size: 20px;
+}
+.cashback > div div:nth-child(3){
+  border: 2px solid white;
+  width: 130px;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.cashback > div:nth-child(2){
+  background: #010179;
+}
+.cashback > div:nth-child(2) span{
+  font-weight: lighter;
+}
+.swipe{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.swipe > div{
+  width: 360px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px 0px 0px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background:linear-gradient(330deg,#0087e0,#7ee5ff);
+}
+.swipe > div h2{
+  color:#010179;
+}
+.swipe > div > p{
+  color:#010179;
+}
+.swipe > div > p + div{
+  width: 200px;
+  border-radius: 20px;
+  background: orange;
+  font-weight: bold;
+  font-size: 12px;
+  padding:6px 0px 6px 15px;
+}
+.swipe-separate1{
+   position: absolute;
+   border: 5px solid rgb(36, 35, 35);
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom: none;
+   right: 20px;
+   width: 120px;
+   background: white;
+   height: 138px;
+}
+.swipe-separate1 div{
+  background: #010179;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+.swipe-separate1 p{
+  font-size: 12px;
+  padding: 3px 0px 0px 3px;
+}
+.swipe-separate2{
+  position: absolute;
+  right: 1px;
+  bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 155px;
+  height: 30px;
+  font-size: 10px;
+  background: white;
+  box-shadow: 0px 0px 20px rgb(133, 129, 129),0px 10px 20px rgb(134, 131, 131);
+}
+.swipe-separate2 > div{
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border-radius: 50%;
+  background: green;
+  color: white;
+}
+.swipe-separate2 > p{
+  font-weight: bold;
+}
+.swipe-separate2 > p + div{
+  background: #00aeff;
+  width: 30px;
+  height: 30px;
+  border-radius: 1px;
+}
+.ticket-booking{
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  background: #e3f8fd;
+  margin-top: 30px;
+}
+.ticket-booking-center{
+  width: 85%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.black{
+  color: black;
+}
+.blue{
+  color: #00aeff;
+}
+.ticket-booking-center h2{
+  color: #000058;
+  font-size: 35px;
+  display: flex;
+  align-items: end;
+}
+.ticket-booking-center1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  
+}
+.ticket-booking-center1 > div{
+  display: flex;
+  gap: 30px;
+}
+.ticket-booking-center1-flex{
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: border-bottom 0.2s linear;
+}
+.ticket-booking-center1-flex:hover{
+    border-bottom: 3px solid blue;
+}
+.imgbox{
+  width: 50%;
+  height: 50%;
+}
+.flight{
+    background-image: url(../assets/flight.png);
+    background-size: 100% 100%;
+}
+.bus{
+    background-image: url(../assets/bus.png);
+    background-size: 100% 100%;
+}
+.train{
+    background-image: url(../assets/train.png);
+    background-size: 100% 100%;
+}
+.intlflight{
+    background-image: url(../assets/intflight.png);
+    background-size: 100% 100%;
+}
+.ticketbooking-content{
+  width: 100%;
+  height: 210px;
+  background: white;
+  border-radius: 10px;
+}
+.radio1{
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 10px 0px;
+}
+input[type ="radio"]{
+margin-left: 30px;
+transform: scale(1.5);
+}
+label{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.about-flight{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: white;
+}
+.to,.depart,.economy{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
+    width: 20%;
+    background: white;
+}
+#from,#to,#date,#economy{
+    height: 80px;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+.about-flight > button{
+    width: 220px;
+    height: 60px;
+    margin: auto;
+    border-radius:10px;
+    background:#00aeff;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.about-fares{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+.about-fares h4{
+    color: gray;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.about-fares h5{
+    color: green;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.about-fares > div:nth-child(2){
+    border: 1px solid gray;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.about-fares > div:nth-child(3){
+    border: 1px solid gray;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.about-fares > div:nth-child(4){
+    border: 1px solid gray;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.about-fares h6{
+    font-size: 15px;
+}
+.about-fares p{
+    font-size: 12px;
+    color: gray;
+}
+.wholepage1{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.bankaccount{
+    width: 85%;
+    height: 600px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+
+}
+.bankaccount >div:nth-child(1){
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 0px 0px 20px;
+
+    
+}
+.bankaccount >div:nth-child(2){
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bankaccount div:nth-child(1) h4{
+    color:#020292;
+    font-size: 40px;
+}
+.bankaccount div:nth-child(1) h2{
+    font-size: 50px;
+}
+.bankaccount div:nth-child(1) > p{
+    font-size: 22px;
+}
+.butmain{
+  display: flex;
+  gap: 30px;
+
+}
+.butmain > div{
+  width: 200px;
+  height: 50px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 3px 0px 0px 30px;
+}
+.paid-sucess{
+  width: 250px;
+  height: 350px;
+  border: 5px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paid-sucess1{
+  width: 95%;
+  height: 50%;
+  background: rgb(223, 222, 222);
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.paid-sucess1 > h5{
+  font-size: 20px;
+}
+.paid-sucess > h6{
+  font-size: 15px;
+  margin-top: 30px;
+}
+.paid-sucess > h5{
+  font-size: 10px;
+  color: gray;
+  margin-top: 10px;
+}
+.paid-img > div:nth-child(2){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid1.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(3){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid2.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(4){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid3.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(5){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid4.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(6){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid5.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(7){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid6.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(8){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid7.png);
+  background-size: 100% 100%;
+}
+.paid-img > div:nth-child(9){
+width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-image: url(../assets/paid8.png);
+  background-size: 100% 100%;
+}
+.hours{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.hours > div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 80px;
+  background:linear-gradient(180deg,#0087e0,#25a8ff);
+  border-radius: 50px;
+  align-items: center;
+  color: white;
+}
+.hours > div > div{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../assets/paytm.png);
+}
+.hours > div > button{
+  width: 150px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background: linear-gradient(180deg,#0087e0,#25a8ff);
+  color: white;
+  font-size: 18px;
+}
+.creditcards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.div{
+  width: 40%;
+  height: 600px;
+  background: #e6f5ff;
+  border-radius: 20px;
+}
+.div> h6{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0px 0px 20px;
+}
+.div > h2 > span{
+  color: #25a8ff;
+}
+.div > h2{
+  font-size: 50px;
+  margin: 10px 0px 0px 20px;
+}
+.div > h4{
+  font-size: 40px;
+  color: #010179;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.div > h4 > span{
+  color: #00aeff;
+}
+.div > p{
+  font-size: 23px;
+  margin: 20px 0px 0px 20px;
+}
+.div > button{
+  width: 180px;
+  height: 40px;
+  border: 3px solid #000058;
+  background: #def1ff;
+  border-radius: 50px;
+  color: #000058;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px 0px 0px 20px;
+}
+.creditcards1 img{
+  padding: 0px 0px 0px 20px;
+  width: 100px;
+  height: 3 0px;
+}
+.family-img{
+  width: 100%;
+  height: 265px;
+  background-image: url(../assets/family.png);
+  background-size: cover;
+}
+.cardposition{
+  width: 100%;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardposition > div{
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  transform: rotateX(0deg) rotateY(50deg) rotatez(10deg);
+}
+
+.cardposition > div:nth-child(1){
+  background-image: url(../assets/card1.jpg.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+}
+.cardposition > div:nth-child(2){
+  background-image: url(../assets/card2.jpg.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 120px;
+  bottom: 25px;
+}
+.cardposition > div:nth-child(3){
+  background-image: url(../assets/card3.jpg.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 180px;
+  bottom: 35px;
+}
+.cardposition > div:nth-child(4){
+  background-image: url(../assets/card4.jpg.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 240px;
+  bottom: 40px;
+}
+.paytm-money{
+  width: 85%;
+  height: 600px;
+  /* background-color: white; */
+  background: url(../assets/trade3.jpg);
+  background-size: 100% 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paytm-money > div{
+  width: 550px;
+  height: 90%;
+}
+.paytm-money > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.paytm-moneylogo{
+  width: 150px;
+  height: 60px;
+  position: relative;
+  display: flex;
+}
+.paytm-moneylogo > div:nth-child(1){
+  width: 70px;
+  height: 40px;
+  background: #00aeff;
+  clip-path: polygon(50% 0%,100% 100%,0% 100%);
+  position: absolute;
+}
+.paytm-moneylogo > div:nth-child(2){
+  width: 70px;
+  height: 40px;
+  background:#000042;
+  clip-path: polygon(50% 0%,100% 100%,0% 100%);
+  position: absolute;
+  bottom: 0px;
+}
+.paytm-moneylogo > h5{
+  position: absolute;
+  right: 0px;
+  font-size: 22px;
+}
+.paytm-money > div:nth-child(1) >  h5{
+  font-size: 40px;
+  font-weight: bold;
+}
+.paytm-money > div:nth-child(1) > h3{
+  color: #0092d6;
+  font-size: 45px;
+}
+.paytm-money > div:nth-child(1) > p{
+  font-size: 23px;
+  color: black;
+}
+.paytm-money > div:nth-child(1) > button{
+  width: 200px;
+  height: 50px;
+  background: #010179;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+.paytm-money > div:nth-child(1) > button + p{
+  font-size: 12px;
+  color: gray;
+}
+.paytm-money > div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  
+}
+.paytm-money > div:nth-child(2) > .mobile-div{
+  width: 250px;
+  height: 490px;
+  border: 10px solid rgb(46, 46, 46);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-mobile > .paytm-moneylogo{
+  width: 100%;
+}
+.nav-mobile {
+  background: #f5e8e7;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+}
+.nav-mobile > .paytm-moneylogo > h5{
+  font-size: 23px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #010179;
+}
+.nav-mobile > .paytm-moneylogo > h5 > span{
+  color: #00aeff;
+}
+.footer-mobile{
+  width: 100%;
+  height: 60px;
+  background: #f5e8e7;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+}
+/* .paytm-money > div:nth-child(2) > div:nth-child(2){
+  
+  
+} */
+.ptm{
+  /* background: url(../assets/paytmimg.png);
+  background-size: 100% 100%; */
+  width: 300px;
+  height: 200px;
+  border: 1px solid;
+  position: absolute;
+  border-radius: 20px;
+}
