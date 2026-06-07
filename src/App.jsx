@@ -5,7 +5,7 @@ import viteLogo from './assets/vite.svg'
 // import './App.css'
 import Navbar from './header/Navbar'
 import Sectionmain from './section/Sectionmain'
-import Footer from './footer/footer'
+import Footer from './footer/Footer'
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Sectionrecharge from './section/Sectionrecharge'
 import Sectiondthrecharge from './section/Sectiondthrecharge'
